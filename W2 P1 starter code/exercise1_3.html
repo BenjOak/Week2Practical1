@@ -3,6 +3,32 @@
     <head>
         <title>W2 Practical 1: Exercise 1.3</title>
         <meta charset="utf-8">
+        <style>
+            body {
+                color: #0000ff;
+                margin-left: 40px;
+                margin-right: 40px;
+                font-family: 'Courier New', Courier, monospace
+            }
+            h1::selection, p::selection {
+                color: white;
+                background-color: black;
+            }
+            h1 {
+                writing-mode: vertical-rl; 
+                text-orientation: mixed;
+                margin-left: -6px;
+            }
+            h1:hover {
+                cursor: not-allowed;
+            }
+            p:first-of-type:hover {
+                cursor: crosshair;
+            }
+            #two:hover {
+                cursor: grab;
+            }
+        </style>
     </head>
     <body>
         <main>
@@ -13,7 +39,7 @@
                 ultricies vitae ligula. Sed dapibus tortor quis tempus scelerisque. Pellentesque 
                 sollicitudin arcu id ultrices ultrices.</p>
 
-            <p>Fusce sed elit hendrerit, porttitor elit vitae, porttitor tellus. Nullam tincidunt 
+            <p id="two">Fusce sed elit hendrerit, porttitor elit vitae, porttitor tellus. Nullam tincidunt 
                 semper lacus, vehicula semper velit. Nam placerat volutpat turpis. Donec finibus 
                 ligula vitae magna condimentum elementum. Integer rutrum massa id diam tincidunt 
                 aliquam. In vitae neque id nulla mattis pretium at sit amet nunc. Praesent urna 
